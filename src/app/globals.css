@@ -31,3 +31,27 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.has-submenu::after{
+position: absolute;
+content: "\00BB";
+right: 0;
+top: 0;
+color: #fff;
+transform: rotate(90deg);
+}
+
+.breadcrumb{
+  display: flex;
+  gap: 20px;
+}
+.breadcrumb li::after {
+  position: absolute;
+  content: "\00BB";
+  right: -15px;
+  top: 0;
+}
+.breadcrumb li:last-child:after{
+  display: none;
+}
